@@ -1,0 +1,28 @@
+{
+  "name": "be-store-expressjs2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "aldi-hamzah",
+  "scripts": {
+    "migration": "sequelize-auto -o ./modelsNf -d GoShoppingQuiz -h localhost -u postgres -p 5432 -x aldi12345 -e postgres -l esm",
+    "start": "nodemon --exec babel-node ./server/index.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "pg": "^8.11.0",
+    "sequelize": "^6.32.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/node": "^7.22.5",
+    "@babel/plugin-transform-runtime": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "sequelize-auto": "^0.8.8"
+  }
+}
